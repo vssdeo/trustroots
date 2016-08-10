@@ -13,11 +13,15 @@ addons:
   apt:
     sources:
     - ubuntu-toolchain-r-test
+    - mongodb-upstart
+    - mongodb-3.2-precise
     packages:
     - g++-4.8
     - gcc-4.8
     - clang
     - graphicsmagick
+    - mongodb-org-server
+    - mongodb-org-shell
 before_install:
   - gem update --system
   - npm i nsp -g
